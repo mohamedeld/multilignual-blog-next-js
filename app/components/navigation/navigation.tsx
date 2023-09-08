@@ -4,12 +4,14 @@ import PaddingContainer from "../layouts/padding-container";
 
 const Navigation = () => {
   return (
-    <PaddingContainer>
-      <div className="border-b">
-        <div className="py-6 flex items-center justify-between ">
-          <Link href="/">Explore</Link>
+    <div className="border-b sticky top-0 left-0 right-0 bg-white bg-opacity-50 backdrop-blur-md">
+      <PaddingContainer>
+        <div className="py-5 flex items-center justify-between ">
+          <Link className="font-bold text-lg" href="/">
+            Explore
+          </Link>
           <nav>
-            <ul className="flex items-center gap-4">
+            <ul className="flex items-center gap-4 text-neutral-600">
               <li>
                 <Link href="/cities">Cities</Link>
               </li>
@@ -19,8 +21,8 @@ const Navigation = () => {
             </ul>
           </nav>
         </div>
-      </div>
-    </PaddingContainer>
+      </PaddingContainer>
+    </div>
   );
 };
 
