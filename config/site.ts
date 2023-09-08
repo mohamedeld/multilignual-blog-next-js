@@ -8,6 +8,7 @@ export interface SiteConfig {
     github: string;
     linkedin: string;
     instagram: string;
+    facebook: string;
   };
 }
 const siteConfig: SiteConfig = {
@@ -21,6 +22,7 @@ const siteConfig: SiteConfig = {
     github: "http://github.com",
     linkedin: "http://linkedin.com",
     instagram: "http://instagram.com",
+    facebook: "http://facebook.com",
   },
 };
 export default siteConfig;
