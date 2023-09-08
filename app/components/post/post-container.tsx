@@ -17,14 +17,14 @@ const PostContainer = ({
     <Link
       className={`${
         layout === "horizontal"
-          ? "grid grid-cols-2 gap-10 items-center"
+          ? "grid grid-cols-1 md:grid-cols-2 gap-10 items-center"
           : "space-y-10"
       }`}
       href={`/posts/${post.slug}`}
     >
       <Image
         className={`rounded-md w-full h-[300px] object-cover object-center ${
-          reverse ? "order-last" : ""
+          reverse ? "md:order-last" : ""
         }`}
         src={post.image}
         width={600}
